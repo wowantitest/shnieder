@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#99000000"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="24dp">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:text="Определяю координаты…"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp" />
+
+        <ImageButton
+            android:id="@+id/capture"
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/shutter"
+            android:contentDescription="Сфотографировать" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/grant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Дать разрешения"
+        android:visibility="gone" />
+</FrameLayout>

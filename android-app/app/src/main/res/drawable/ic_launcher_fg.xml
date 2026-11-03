@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- секции забора -->
+    <path android:fillColor="#FFFFFF"
+        android:pathData="M34,40 l4,-6 l4,6 v32 h-8z M50,40 l4,-6 l4,6 v32 h-8z M66,40 l4,-6 l4,6 v32 h-8z" />
+    <path android:fillColor="#FFFFFF" android:pathData="M30,46 h48 v4 h-48z M30,62 h48 v4 h-48z" />
+    <!-- маркер сварки -->
+    <path android:strokeColor="#FFEB3B" android:strokeWidth="3" android:fillColor="#00000000"
+        android:pathData="M62,64 m-9,0 a9,9 0 1,0 18,0 a9,9 0 1,0 -18,0" />
+</vector>
