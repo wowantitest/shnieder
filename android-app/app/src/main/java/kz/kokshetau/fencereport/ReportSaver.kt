@@ -53,8 +53,9 @@ object ReportSaver {
         exif.setAttribute(ExifInterface.TAG_IMAGE_DESCRIPTION, info.twoGisLink)
         exif.setAttribute(
             ExifInterface.TAG_USER_COMMENT,
-            "2GIS: ${info.twoGisLink} | GPS: %.6f,%.6f | weld markers: %d"
-                .format(Locale.US, info.latitude, info.longitude, markerCount),
+            // Ссылку не вставляем в шаблон format(): в ней есть "%2C", "%2F".
+            "2GIS: " + info.twoGisLink +
+                " | GPS: %.6f,%.6f | weld markers: %d".format(Locale.US, info.latitude, info.longitude, markerCount),
         )
         exif.setAttribute(ExifInterface.TAG_MAKE, Build.MANUFACTURER)
         exif.setAttribute(ExifInterface.TAG_MODEL, Build.MODEL)
